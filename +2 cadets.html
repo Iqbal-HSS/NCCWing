@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>+2 Cadets</title>
+
+<style>
+    body {
+        font-family: "Times New Roman", serif;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-top: 20px;
+        font-weight: 900;
+    }
+
+    .underline-bar {
+        width: 260px;
+        height: 10px;
+        margin: 5px auto 30px;
+        display: flex;
+    }
+
+    .bar-red { background: red; width: 33%; }
+    .bar-navy { background: navy; width: 33%; }
+    .bar-sky { background: skyblue; width: 34%; }
+
+    /* GRID FOR 27 SLOTS */
+    .grid-container {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 35px;
+    }
+
+    .cadet-box { text-align: center; }
+
+    .photo-frame {
+        width: 180px;
+        height: 230px;
+        margin: auto;
+        border: 10px solid skyblue;
+        background: white;
+        padding: 4px;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .photo-frame::before {
+        content: "";
+        position: absolute;
+        inset: 4px;
+        border: 6px solid navy;
+    }
+
+    .photo-frame::after {
+        content: "";
+        position: absolute;
+        inset: 12px;
+        border: 4px solid red;
+    }
+
+    .photo-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 10;
+        position: relative;
+    }
+
+    .labels {
+        text-align: left;
+        width: 180px;
+        margin: 10px auto;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.2em;
+    }
+
+    /* GRADIENT BORDER BACK TO HOME BUTTON */
+    .gradient-button {
+        margin: 60px auto;
+        display: inline-block;
+        padding: 14px 45px;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        border-radius: 50px;
+        background: white;
+        position: relative;
+        z-index: 1;
+        text-decoration: none;
+    }
+
+    .gradient-button::before {
+        content: "";
+        position: absolute;
+        inset: -3px;
+        border-radius: 50px;
+        background: linear-gradient(90deg, navy, red, skyblue);
+        z-index: -1;
+    }
+
+/* COLOR STYLES FOR LABEL ITEMS */
+.cadet-no { color: red; font-weight: bold; text-decoration: underline;}
+
+.address { color: red; font-weight: bold; text-decoration: underline; }
+
+.dob { color: red; font-weight: bold; text-decoration: underline; }
+
+</style>
+</head>
+
+<body>
+
+<h1>+2 CADETS</h1>
+
+<div class="underline-bar">
+    <div class="bar-red"></div>
+    <div class="bar-navy"></div>
+    <div class="bar-sky"></div>
+</div>
+
+<div class="grid-container">
+
+    <!-- SLOT 1 -->
+    <div class="cadet-box">
+        <div class="photo-frame"><img src="+2 Cadets\Akshay.jpg"></div>
+        <div class="labels">
+            Cadet no: <u><span class="dob"> KL2024SDIA2940421</span></u><br><br>Name: AKSHAY KRISHNA S<br>Father's name: SHIJU VR<br>Mother's name:Archana J Nair<br>Address:<span class="dob">Shiju Bhavan Panachakunnu Pacha, Paluvally P O Nanniyodu</span><br> Date of Birth:<span class="dob">11.02.2008</span>
+        </div>
+    </div>
+
+    <!-- SLOT 2 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Alan.jpg"></div>
+        <div class="labels">Cadet no:<u><span class="dob">  KL2024SDIA2940459</span></u><br><br>Name: ALAN MS<br>Father's name: MAHASENAN C<br>Mother's name:Sreekala AK<br><span class="dob"> Address:<span class="dob">Saranyam Thannimoodu Kochuvila P O Peringammala</span><br> Date of Birth:<span class="dob">28.10.2008</span> </div>
+    </div>
+
+    <!-- SLOT 3 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Abhiram A R.jpg"></div>
+        <div class="labels">Cadet no:<u><span class="dob"> KL2024SDIA2940460</span></u><br><br>Name: ABHIRAM AR<br>Father's name: ANIL KUMAR P<br>Mother's name:<br><span class="dob"> Address:<span class="dob"></span><br>Date of Birth:<span class="dob"></span> </div>
+    </div>
+
+    <!-- SLOT 4 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Kesav.jpg"></div><div class="labels">Cadet no:<u><span class="dob"> KL2024SDIA2940461</span></u><br><br>Name: KESAV B NAIR<br>Father's name: BINU KUMAR V<br>Mother's name:Priya IV Nair<br>Address:<span class="dob">Uthram Anugraha Nagar, Meenankal P O</span><br>Date of Birth:<span class="dob">26.02.2008</span></div></div>
+
+    <!-- SLOT 5 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Vaishnav J.jpg"></div><div class="labels">Cadet no:<u><span class="dob"> KL2024SDIA2940468</span></u><br>Name: VAISHNAV J<br>Father's name: JAYACHANDRAN A<br>Mother's name:Naumol VB<br> Address:<span class="dob">Thadatharikathu Veedu Parakkonam Peringammala</span><br>Date of Birth:<span class="dob">14.07.2008</span> </div></div>
+
+    <!-- SLOT 6 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Muhammad.jpg"></div><div class="labels">Cadet no:<u><span class="dob"> KL2024SDIA2940469</span></u><br>Name: MUHAMMAD A H<br>Father's name: ABDUL HAKKIM<br>Mother's name:Aneesa<br> Address:<span class="dob">L.H Haouse Kochuvila, Kochuvila P O</span><br>Date of Birth:<span class="dob">26.05.2008</span> </div></div>
+
+    <!-- SLOT 7 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Nasif.jpg"></div><div class="labels">Cadet no:<u><span class="dob"> KL2024SDIA2940475</span></u><br>Name: MUHAMMED NASIF N<br>Father's name: NOUSHAD M M<br>Mother's name:Saneesha A <br> Address:<span class="dob">N H Manzil Kochukarikkakam Daivappura P O </span><br>Date of Birth:<span class="dob">27.02.2008</span> </div></div>
+
+    <!-- SLOT 8 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Aromal.jpg"></div><div class="labels">Cadet no:<u><span class="dob"> KL2024SDIA2940476</span></u><br>Name: AROMAL A S<br>Father's name: ANIL KUMAR D S<br>Mother's name:Smitha VS<br> Address:<span class="dob">AvittomPullivattom Karimancode P O</span><br>Date of Birth:<span class="dob">16.09.2007</span></div></div>
+
+    <!-- SLOT 9 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Sanjay.jpg"></div><div class="labels">Cadet no:<u><span class="dob"> KL2024SDIA2940485</span></u><br>Name: SANJAY S S<br>Father's name: SAJI V N<br>Mother's name:Sandhya KP<br> Address:<span class="dob">Midhila near sivs temple Vithura P O</span><br>Date of Birth:<span class="dob">20.12.2007</span> </div></div>
+
+    <!-- SLOT 10 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Anwar.jpg"></div><div class="labels">Cadet no:<u><span class="dob"> KL2024SDIA2940501</span></u><br>Name: ANWAR HUSSAIN A<br>Father's name: ABDUL HAKKIM<br>Mother's name:Haseena<br> Address:<span class="dob">Thasnem Manzil Chittoor Daivappura P O Peringammala</span><br>Date of Birth:<span class="dob">03.04.2008</span> </div></div>
+    
+    <!-- SLOT 11 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Ebrahim.jpg"></div><div class="labels">Cadet no:<u><span class="dob"> KL2024SDIA2940503</span></u><br>Name: EBRAHIM BADUSHA M<br>Father's name: MUJEEB S S<br>Mother's name:<br> Address:<span class="dob"></span><br>Date of Birth:<span class="dob"> </span></div></div>
+
+    <!-- SLOT 12 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Vaishnav S.jpg"></div><div class="labels">Cadet no:<u><span class="dob"> KL2024SDIA2940507</span></u><br>Name: VAISHNAV S<br>Father's name: SUNIL KUMAR S<br>Mother's name: Arundevi K R<br> Address:<span class="dob">Vaishnavam Kallippara Chadachikarikkakam Palode Pacha P O</span><br>Date of Birth:<span class="dob">22.09.2008</span></div></div>
+
+    <!-- SLOT 13 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Roshin.jpg"></div><div class="labels">Cadet no:<u><span class="dob"> KL2024SDIA2940508</span></u><br>Name: ROSHIN<br>Father's name: NAZER<br>Mother's name:Jameela Beevi<br> Address:<span class="dob">Thadatharikathu Veedu Pullipacah Kochuvila P O Peringammala</span><br>Date of Birth:<span class="dob">27.05.2009</span> </div></div>
+    
+    <!-- SLOT 14 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Karthikeyan.jpg"></div><div class="labels">Cadet no:<u><span class="dob"> KL2024SDIA2940509</span></u><br>Name: KARTHIKEYAN S A<br>Father's name: S SUKESH KUMAR<br>Mother's name: Aswany PC<br> Address:<span class="dob">Avittam Mulamoodu Pacha Paluvally P O</span><br>Date of Birth:<span class="dob">10.10.2008</span> </div></div>
+
+    <!-- SLOT 15 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Abhiram.jpg"></div><div class="labels">Cadet no:<u><span class="dob"> KL2024SDIA2940588</span></u><br>Name:ABHIRAM S R<br>Father's name:SURESH G<br>Mother's name: Rekhamol MV<br> Address:<span class="dob">Punartham Kaithayil anakulam Meenmutty P O</span><br>Date of Birth:<span class="dob">29.02.2008</span></div></div>
+    
+
+    <!-- SLOT 16 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Govardhan.jpg"></div><div class="labels">Cadet no:<u><span class="dob"> KL2024SDIA2940904</span></u><br>Name: GOVARDHAN R RAJ<br>Father's name: RAJENDRAN NAIR K<br>Mother's name: Rethika<br>Address:<span class="dob">Sreeragam Thennoor P O  Thennoor</span> <br>Date of Birth:<span class="dob">15.07.2008</span> </div></div>
+    
+
+    <!-- SLOT 17 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Arathy.jpg"></div><div class="labels">Cadet no:<u><span class="dob"> KL2024SWIA2940408</span></u><br>Name: ARATHI KRISHNA A<br>Father's name: UNNIKRISHNAN NAIR<br>Mother's name:<br>Address:<span class="dob"></span> <br>Date of Birth:<span class="dob"> </span></div></div>
+
+    <!-- SLOT 18 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Sandra.jpg"></div><div class="labels">Cadet no:<u><span class="dob"> KL2024SWIA2940420</span></u><br>Name: SANDRA S KUMAR<br>Father's name: SATHYAKUMAR T<br>Mother's name: Vinodini SL<br>Address:<span class="dob">Sidharth Manthuruthy Peringammala P O</span><br>Date of Birth:<span class="dob">25.10.2008</span></div></div>
+
+    <!-- SLOT 19 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Devikrishna.jpg"></div><div class="labels">Cadet no:<u><span class="dob"> KL2024SWIA2940434</span></u><br>Name: DEVIKRISHNA D B<br>Father's name: BINULAL O R<br>Mother's name: Deepa R<br>Address:<span class="dob">Lal Bhavan Manthurithi Karimancode P O</span><br>Date of Birth:<span class="dob"> 20.12.2008</span> </div></div>
+
+    <!-- SLOT 20 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Asiya.jpg"></div><div class="labels">Cadet no:<u><span class="dob"> KL2024SWIA2940682</span></u><br>Name: ASIYA FATHIMA A S<br>Father's name: ABDHUL KHALAM M<br>Mother's name:<br>Address:<span class="dob"> </span><br>Date of Birth:<span class="dob"></span> </div></div>
+
+    <!-- SLOT 21 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Akshara.jpg"></div><div class="labels">Cadet no:<u><span class="dob"> KL2024SWIA2940474</span></u><br>Name: AKSHARA V R <br>Father's name: RENJITH V K<br>Mother's name:<br>Address:<span class="dob"> </span><br>Date of Birth:<span class="dob"></span> </div></div>
+
+    <!-- SLOT 22 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Aswani.jpg"></div><div class="labels">Cadet no:<u><span class="dob"> KL2024SWIA2940484</span></u><br>Name: ASWANI R B<br>Father's name: BIJU M<br>Mother's name: Remya Mol L<br>Address:<span class="dob">Uthradam Parakkonam Peringammala P O</span><br>Date of Birth:<span class="dob">25.05.2008</span></div></div>
+
+        <!-- SLOT 23 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Nidhina.jpg"></div><div class="labels">Cadet no:<u><span class="dob"> KL2024SWIA2940500</span></u><br>Name: NIDHINA S BABU<br>Father's name: RAMESH BABU VK<br>Mother's name: Sobha Kumari B<br>Address:<span class="dob">Padippoottumalayil Parakkonam Peringammala P O</span> <br>Date of Birth:<span class="dob">29.09.2008</span> </div></div>
+    
+        <!-- SLOT 24 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Fathima Sulthana.jpg"></div><div class="labels">Cadet no:<u><span class="dob"> KL2024SWIA2940505</span></u><br>Name: FATHIMA SULTHANA N S<br>Father's name: SUDHEERKHAN S<br>Mother's name: Nissa PA<br>Address:<span class="dob">Nissa Manzil Pandarakonam Karimancode P O</span> <br>Date of Birth:<span class="dob">27.04.2008</span></div></div>
+
+        <!-- SLOT 25 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Jasna.jpg"></div><div class="labels">Cadet no:<u><span class="dob"> KL2024SWIA2940525</span></u><br>Name: JASNA J <br>Father's name: JITHIN R<br>Mother's name: Jasmin<br>Address:<span class="dob">Jasna Manzil Pullipacha Kochuvila P O</span><br>Date of Birth:<span class="dob">17.11.2008</span> </div></div>
+
+        <!-- SLOT 26 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Bhadra.jpg"></div><div class="labels">Cadet no:<u><span class="dob"> KL2024SWIA2940920</span></u><br>Name: ANANTHA BHADRA M<br>Father's name: MANOJ R<br>Mother's name: Liji G <br>Address:<span class="dob">Gayathri Peckamoola Nanniyode Pacha P O</span> <br>Date of Birth:<span class="dob">27.09.2007</span></div></div>
+    
+        <!-- SLOT 27 -->
+    <div class="cadet-box"><div class="photo-frame"><img src="+2 Cadets\Aliya.jpg"></div><div class="labels">Cadet no:<u><span class="dob"> KL2024SWIA2940530</span></u><br>Name: ALIYA FATHIM A S<br>Father's name: ABDUL HAKKIM M<br>Mother's name: Shyja NP<br>Address:<span class="dob">Darul Aman Pachayath Junction Peringammala, Peringammala P O </span> <br>Date of Birth:<span class="dob">16.02.2008</span></div></div>
+
+</div>
+
+<!-- BACK TO HOME BUTTON (Gradient pill style) -->
+<a href="index.html" class="gradient-button">Back to Home</a>
+
+</body>
+</html>
